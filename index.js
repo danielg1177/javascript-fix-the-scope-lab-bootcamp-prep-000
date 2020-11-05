@@ -17,12 +17,11 @@ function add2(n) {
   // Feel free to move things around
 }
 
-function anything() {
-  return "FUNKY!"
-}
 
 function funkyFunction() {
-  return anything()
+  return function anything() {
+  return "FUNKY!"
+  }
 }
 
 var theFunk = funkyFunction()
